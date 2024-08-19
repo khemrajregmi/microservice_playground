@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "supertest": "^6.3.3"
+  },
+  "scripts": {
+    "appointments": "docker-compose up --build appointments"
+  }
+}

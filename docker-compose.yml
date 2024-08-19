@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  users:
+    build:
+      context: users
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./users/src:/app/src
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - appointments
+
+  appointments:
+    build:
+      context: appointments
+    ports:
+      - '3001:3000'
+    volumes:
+      - ./appointments/src:/app/src
+      - ./appointments/appointments-data:/data
+    environment:
+      - NODE_ENV=production
+
+volumes:
+  appointments-data:
+  results-data:

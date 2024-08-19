@@ -1,0 +1,28 @@
+# Node.js dependencies
+node_modules/
+
+# Go dependencies
+go.mod
+go.sum
+/vendor/
+
+# Docker images
+*.tar
+
+# Editor files
+.vscode/
+.idea/
+
+# Test coverage reports
+coverage/
+
+# Environment files
+.env
+.env.*
+
+# Log files
+*.log
+
+# Compiled binaries
+/bin/
+/appointments/appointments.db
